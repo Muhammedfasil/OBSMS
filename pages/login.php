@@ -5,6 +5,15 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+  <style type="text/css">
+     body { 
+  background: url('../dist/img/background.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  </style>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Log in</title>
@@ -31,11 +40,11 @@ session_start();
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition login-page">
+<body>
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>O</b>BS<b>MS</BS<b></a>
-  </div>
+    <a href="#" style="color: white"><b>O</b>BS<b>MS</BS<b></a>
+  </div>  
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Log in to continue..!</p>
@@ -74,7 +83,7 @@ session_start();
     <!-- /.social-auth-links -->
 
     <a href="#">I forgot my password</a><br>
-    <a href="index.php" class="text-center">Register a new membership</a>
+    <a href="register.php" class="text-center">Register a new membership</a>
 
   </div>
   <!-- /.login-box-body -->
@@ -117,7 +126,7 @@ session_start();
     $_SESSION['phonenumber']=$row['phonenumber'];
     if ($row['email'] == $email && $row['password'] == $pass) 
     {
- echo "<script>window.location.href='addstudent.php'</script>";     exit();
+ echo "<script>window.location.href='home.php'</script>";     exit();
     }
     else
     {

@@ -10,7 +10,7 @@
    $row=mysqli_fetch_array($demo);
     if ($row['email'] == $email && $row['password'] == $pass) 
     {
-     echo "<script>window.location.href='addstudent.php'</script>";
+     echo "<script>window.location.href='home.php'</script>";
      exit();
     }
     else

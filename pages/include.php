@@ -2,7 +2,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="indextest.php" class="logo">
+    <a href="home.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>O</b>MS</span>
       <!-- logo for regular state and mobile devices -->
@@ -89,15 +89,7 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p><?php echo $_SESSION['name']; ?></p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
+      
       <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
@@ -112,34 +104,23 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li> 
-        <li class="treeview">
        
-            <li ><a href="addstudent.php"><i class="fa fa-graduation-cap text-green"></i>Students</a></li>
-            
-       
-    
-            <li><a href="outcome.php"><i class="fa  fa-trophy text-maroon"></i></i>Outcome</a></li>
-      
-    
-            <li><a href="subjects.php"><i class="fa fa-book text-red"></i></i>Subject</a></li>
-            
+      <li><a href="addstudent.php"><i class="fa fa-graduation-cap text-green"></i><span>Students</span></a></li>
+        <li><a href="outcome.php"><i class="fa fa-star text-yellow"></i><span>Outcome</span></a></li>
      
-     
-            <li><a href="#"><i class="fa  fa-institution (alias) text-brown"></i></i>Add departments</a></li>
-       
-      
-            <li><a href="question.php"><i class="fa  fa-newspaper-o text-blue"></i></i>Prepare Question Paper</a></li>
+            <li><a href="subjects.php"><i class="fa fa-book text-red"></i><span>Subjects</span></a></li>
+           
+            <li><a href="#"><i class="fa  fa-institution (alias) text-blue"></i><span>Departments</span></a></li>
+            
+            <li><a href="question.php"><i class="fa fa-newspaper-o text-white"></i><span>Prepare Question Paper</span></a></li>
+            
+            <li><a href="markentry.php"><i class="fa  fa-keyboard-o text-red"></i><span>Marks</span></a></li>
+           
+            <li><a href="#"><i class="fa   fa-line-chart text-yellow"></i><span>Reports</span></a></li>
+            
         
-       
-            <li><a href="markentry.php"> <i class="fa  fa-edit (alias) text-success"></i></i>Enter Marks</a></li>
-      
-   
-
-            <li><a href="studinput.php"><i class="fa  fa-line-chart text-center"></i></i>Report</a></li>
-      
-        
-        <li class="header">LABELS</li>
-        <li><a href="indextest.php"><i class="fa fa-circle-o text-red"></i> <span>Home</span></a></li>
+        <li class="header">More </li>
+        <li><a href="home.php"><i class="fa fa-circle-o text-red"></i> <span>Home</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Contact us!</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Help</span></a></li>
       </ul>
