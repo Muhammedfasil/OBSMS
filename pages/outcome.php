@@ -9,7 +9,7 @@ include("connection.php");
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Outcome</title>
+  <title>Outcomes</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -58,7 +58,7 @@ include("connection.php");
              <div class="box" style="border-top: 3px solid #00c0ef;">
             <div class="box-header" id="head">
               
-              <h3 class="box-title">Outcome</h3>
+              <h3 class="box-title">Outcomes</h3>
                <button type="submit" class="btn btn-info pull-right" style=" margin-left: 10px" onclick="add()">Add Outcome</button>
                <button type="submit" class="btn btn-info pull-right">Bulk Add</button>
                <script type="text/javascript">

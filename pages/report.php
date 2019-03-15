@@ -8,7 +8,7 @@ include("connection.php");
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Students Report</title>
+  <title>Reports</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -54,7 +54,7 @@ include("include.php");
            
              <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Report  by Students</h3>
+              <h3 class="box-title">Reports</h3>
                
      </div>
          
@@ -66,8 +66,48 @@ include("include.php");
                 <div class="box-body">
                     <div class="form-group">
                    
-                            <!-- Content of this page should be here -->
+                          <div class="row" style="margin-top:1%;">
+                <div class="span10" style="margin-left:30px">
+                    <table class="table table-condensed table-striped table-hover tablesorter" style="max-width:95%;font-size:17px;border:1px solid gainsboro">
+                        <thead style="background: gainsboro">
+                            <tr>
+                                <th>
+                                    <a href="" class="btn-link" ng-click="reverse=!reverse;orderPrograms('name', reverse)" style="color:black">
+                                        <span style="max-width:inherit">Name</span>&nbsp;&nbsp;
+                                        <span class="fa fa-sort columnSortIcons" style="right:0px; width:20px"></span>
+                                    </a>
+                                </th>
+                                <th style="text-align:center">Course-PO matrix Report</th>
+                                                                    <th style="text-align:center">PO Attainment Report</th>
 
+                                <th style="text-align:center">Upload/Download Indirect Assessment </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ngRepeat: program in programs --><tr ng-repeat="program in programs" class="ng-scope">
+                                <td style="max-width:20%;  text-align:left; vertical-align:middle;"><span class="ng-binding">Computer Hardware Engineering - 2016 - 2019</span></td>
+                                <td style="max-width:10%;" class="td-centered"><a href="repport.php" style="cursor:pointer" title="view"><i class="fa fa-eye"></i></a></td>
+                                                                    <td style="max-width:10%;" class="td-centered"><a href="report-po.php" style="cursor:pointer" title="view"><i class="fa fa-eye"></i></a></td>
+
+                                <td style="max-width:10%;" class="td-centered"><span style="cursor:pointer;" ng-click="setProgramId(program.programId,program.name)" data-target="#uploadProgramLevelModal" data-toggle="modal"> <a href="javascript:void(0)" title="upload/download"><i class="fa fa-cloud-upload"></i>&nbsp;<i class="fa fa-cloud-download"></i></a> </span></td>
+                            </tr><!-- end ngRepeat: program in programs --><tr ng-repeat="program in programs" class="ng-scope">
+                                <td style="max-width:20%;  text-align:left; vertical-align:middle;"><span class="ng-binding">Computer Hardware Engineering - 2017 - 2020</span></td>
+                                <td style="max-width:10%;" class="td-centered"><a href="repport.php" style="cursor:pointer" title="view"><i class="fa fa-eye"></i></a></td>
+                                                                    <td style="max-width:10%;" class="td-centered"><a href="report-po.php" style="cursor:pointer" title="view"><i class="fa fa-eye"></i></a></td>
+
+                                <td style="max-width:10%;" class="td-centered"><span style="cursor:pointer;" ng-click="setProgramId(program.programId,program.name)" data-target="#uploadProgramLevelModal" data-toggle="modal"> <a href="javascript:void(0)" title="upload/download"><i class="fa fa-cloud-upload"></i>&nbsp;<i class="fa fa-cloud-download"></i></a> </span></td>
+                            </tr><!-- end ngRepeat: program in programs --><tr ng-repeat="program in programs" class="ng-scope">
+                                <td style="max-width:20%;  text-align:left; vertical-align:middle;"><span class="ng-binding">Computer Hardware Engineering - 2018 - 2021</span></td>
+                                <td style="max-width:10%;" class="td-centered"><a href="repport.php" style="cursor:pointer" title="view"><i class="fa fa-eye"></i></a></td>
+                                                                    <td style="max-width:10%;" class="td-centered"><a href="report-po.php" style="cursor:pointer" title="view"><i class="fa fa-eye"></i></a></td>
+
+                                <td style="max-width:10%;" class="td-centered"><span style="cursor:pointer;" ng-click="setProgramId(program.programId,program.name)" data-target="#uploadProgramLevelModal" data-toggle="modal"> <a href="javascript:void(0)" title="upload/download"><i class="fa fa-cloud-upload"></i>&nbsp;<i class="fa fa-cloud-download"></i></a> </span></td>
+                            </tr><!-- end ngRepeat: program in programs -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
                      </div>
                       <!-- This is Box Body -->
               

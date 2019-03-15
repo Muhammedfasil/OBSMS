@@ -8,7 +8,7 @@ include("connection.php");
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Report Generation</title>
+  <title>Reports</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -54,26 +54,21 @@ include("include.php");
            
              <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Mark Entry</h3>
+              <h3 class="box-title">Course-PO matrix report</h3>
                
      </div>
          
             <!-- /.box-header -->
             <div class="box-body">
               
-
-             
-
-                    <?php 
-
-                     
-                    ?>
-
- 
-
-
-
-
+                  <div>
+                    <img src="../dist/img/report-1.png" style="width: 100%;height: auto;margin-bottom: 10px">
+                    <img src="../dist/img/report-2.png" style="width: 100%;height: auto;margin-bottom: 10px">
+                    <img src="../dist/img/report-3.png" style="width: 100%;height: auto;margin-bottom: 10px">
+                    <img src="../dist/img/report-5.png" style="width: 100%;height: auto;margin-bottom: 10px">
+                    <img src="../dist/img/report-po-1.png" style="width: 100%;height: auto;margin-bottom: 10px">
+                  </div>
+                  <div><a href="report.php">Back</a></div>
                      </div>
                   
                    </div>

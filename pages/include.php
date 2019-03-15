@@ -42,13 +42,13 @@
           <!-- Notifications: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="../dist/img/user2.png" class="user-image" alt="User Image">
               <span class="hidden-xs"><?php echo $_SESSION['name']; ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="../dist/img/user2.png" class="img-circle" alt="User Image">
 
                 <p>
                   <?php echo $_SESSION['name']; ?>
@@ -74,7 +74,7 @@
               <li class="user-footer">
                 
                 <div class="pull-right">
-                  <a href="lockscreen.php" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="login.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -106,22 +106,24 @@
         <li class="header">MAIN NAVIGATION</li> 
        
       <li><a href="addstudent.php"><i class="fa fa-graduation-cap text-green"></i><span>Students</span></a></li>
-        <li><a href="outcome.php"><i class="fa fa-star text-yellow"></i><span>Outcome</span></a></li>
+       <li><a href="subjects.php"><i class="fa fa-book text-red"></i><span>Courses</span></a></li>
+        <li><a href="outcome.php"><i class="fa fa-star text-yellow"></i><span>Outcomes</span></a></li>
      
-            <li><a href="subjects.php"><i class="fa fa-book text-red"></i><span>Subjects</span></a></li>
            
-            <li><a href="#"><i class="fa  fa-institution (alias) text-blue"></i><span>Departments</span></a></li>
-            
-            <li><a href="question.php"><i class="fa fa-newspaper-o text-white"></i><span>Prepare Question Paper</span></a></li>
+           
+           <!--  <li><a href="#"><i class="fa  fa-institution (alias) text-blue"></i><span>Departments</span></a></li>
+             -->
+            <li><a href="question.php"><i class="fa fa-newspaper-o text-white"></i><span>Question Paper</span></a></li>
             
             <li><a href="markentry.php"><i class="fa  fa-keyboard-o text-red"></i><span>Marks</span></a></li>
+            <li><a href="studinput.php"><i class="fa   fa-user text-green"></i><span>Student Report</span></a></li>
            
-            <li><a href="#"><i class="fa   fa-line-chart text-yellow"></i><span>Reports</span></a></li>
+            <li><a href="report.php"><i class="fa   fa-line-chart text-yellow"></i><span>Reports</span></a></li>
             
         
         <li class="header">More </li>
         <li><a href="home.php"><i class="fa fa-circle-o text-red"></i> <span>Home</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Contact us!</span></a></li>
+        <li><a href="profile.php"><i class="fa fa-circle-o text-yellow"></i> <span>Contact us!</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Help</span></a></li>
       </ul>
     </section>

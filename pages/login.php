@@ -5,15 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-  <style type="text/css">
-     body { 
-  background: url('../dist/img/background.png') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-  </style>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Log in</title>
@@ -40,10 +32,10 @@ session_start();
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body>
+<body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#" style="color: white"><b>O</b>BS<b>MS</BS<b></a>
+    <a href="#"><b>O</b>BS<b>MS</BS<b></a>
   </div>  
   <!-- /.login-logo -->
   <div class="login-box-body">
